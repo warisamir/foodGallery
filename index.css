@@ -1,0 +1,97 @@
+.Header {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid burlywood;
+}
+.logo{
+    width:15em;
+    scale:1;
+    transition:all 0.5s ease-in-out;
+}
+.logo:hover{
+    scale: 0.75;
+    transition: all 1s ease-in-out;
+}
+.nav-Items {
+    padding-right: 2em;
+    margin-right: 1em;
+}
+.nav-Items >ul {
+    display: flex;
+    list-style: none;
+    border: 2px solid burlywood;
+}
+.nav-Items li {
+padding: 1em 2em;
+position:relative;
+animation: identifier;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+transition: all 1s ease-in-out; 
+}
+.nav-Items li:nth-last-child(1){
+margin-right:2em ;
+}
+.nav-Items li:hover {
+ transform: scale(1.1);
+ font-size:medium;
+ background-color: aquamarine;
+ }
+ .Search{
+    padding:.45em
+}
+
+
+.ResturantCard{
+    width:15em;
+    height: 20em;
+    border:1px solid black;
+    padding: .75em;
+    margin:10px;
+    overflow: hidden;
+}
+.ResturantCard >span {
+ margin-left: 0.75em;
+}
+.res-logo{
+    width: 10em;
+   align-items: center;
+} 
+.res-logo:hover{
+    cursor: pointer;
+    border:2px solid burlywood;
+}
+
+.res-container{
+    display: flex;
+    flex-wrap:wrap;
+    padding: 1em;
+}
+.filter-btn{
+    cursor:pointer;
+    padding:2px;
+    margin-top: 25px;
+
+    margin-left:28px;
+    border: 1px solid grey;
+
+    background-color: rgb(203, 196, 196);
+
+  }
+/* .filter-btn:hover{
+    scale: 1.1;
+    transition: all .5s ease-in-out;
+  } */
+  .shimmer-container{
+    display: flex;
+    flex-wrap:wrap;
+}
+.shimmer-card{
+    width: 15em;
+    height: 20em;
+    background-color:#f0f0f0;
+    margin-left:.75em;
+    padding:0.75em
+}
